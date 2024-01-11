@@ -12,7 +12,8 @@
 //   }
 // }
 // ]
-const Profile = props => {
+const Profile = ({name}) => {
+
   return (<div className="profile">
     <div className="description">
       <img
@@ -20,7 +21,7 @@ const Profile = props => {
         alt="User avatar"
         className="avatar"
       />
-      <p className="name">Petra Marica</p>
+      <p className="name">{ name}</p>
       <p className="tag">@pmarica</p>
       <p className="location">Salvador, Brasil</p>
     </div>
@@ -47,7 +48,7 @@ function App() {
 
   return (
     <div>
-     <p> App</p>
+
       <Profile name="Jacques Gluke"  />
 
       
