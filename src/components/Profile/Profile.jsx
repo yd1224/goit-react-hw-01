@@ -1,4 +1,6 @@
-export const Profile = ({name, tag, location, image, action:{followers,views,likes}}) => {
+import './Profile.css';
+export const Profile = ({ name, tag, location, image, action: { followers, views, likes } }) => {
+  
 
   return (<div className="profile">
     <div className="description">
