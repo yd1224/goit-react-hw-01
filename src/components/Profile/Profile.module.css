@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px; /* Adjust the width as needed */
+  /* Adjust the width as needed */
+  width: 300px;
   border: 1px solid #ccc;
   padding: 20px;
 }
@@ -12,8 +13,6 @@
 }
 
 .avatar {
-  width: 50px; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
   border-radius: 50%;
   margin-right: 10px;
 }

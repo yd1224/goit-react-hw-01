@@ -1,0 +1,37 @@
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  padding: 12px;
+  border-bottom: 1px solid #333; /* Dark border for better visibility */
+  color: #fff; /* White text for better contrast */
+}
+
+.transactionHistory thead {
+  background-color: #222; /* Dark background color for header */
+}
+
+.transactionHistory tbody tr {
+  transition: background-color 0.3s;
+}
+
+.transactionHistory tbody tr:nth-child(even) {
+  background-color: #333; /* Slightly lighter shade for even rows */
+}
+
+.transactionHistory tbody tr:hover {
+  background-color: #555; /* Darker shade on hover */
+  cursor: pointer;
+}
+
+.transactionHistory td {
+  text-align: center;
+}
+
+.text {
+  color: #fff; /* White text for table data */
+}

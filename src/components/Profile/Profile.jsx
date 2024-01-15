@@ -1,33 +1,38 @@
-import './Profile.css';
+import css from './Profile.module.css';
+import { ImProfile } from "react-icons/im";
 export const Profile = ({ name, tag, location, image, action: { followers, views, likes } }) => {
   
 
-  return (<div className="profile">
-    <div className="description">
+  return (<div className={css.profile}>
+    <div className={css.description}>
       <img
         src={image}
         alt="User avatar"
-        className="avatar"
+        className={css.avatar}
+        width="50"
+        height="50"
       />
-      <p className="name">{ name}</p>
-      <p className="tag">@{ tag}</p>
-      <p className="location">{ location}</p>
+      <p className={css.name}>{ name}</p>
+      <p className={css.tag}>@{ tag}</p>
+      <p className={css.location}>{ location}</p>
     </div>
 
 
-    <ul className="stats">
+    <ul className={css.stats}>
       <li>
-        <span className="label">Followers</span>
-              <span className="value">{ followers}</span>
+        <span className={css.label}>Followers</span>
+              <span className={css.value}>{ followers}</span>
       </li>
       <li>
-        <span className="label">Views</span>
-              <span className="value">{views}</span>
+        <span className={css.label}>Views</span>
+              <span className={css.value}>{views}</span>
       </li>
       <li>
-        <span className="label">Likes</span>
-              <span className="value">{ likes}</span>
+        <span className={css.label}>Likes</span>
+        <span className={css.value}>{likes}</span>
+
       </li>
+      <ImProfile size="14" />
     </ul>
   </div>);
 }
