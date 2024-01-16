@@ -32,7 +32,7 @@ export const Profile = ({ name, tag, location, image, action: { followers, views
         <span className={css.value}>{likes}</span>
 
       </li>
-      <ImProfile size="14" />
+      <ImProfile  className={css.label} size="14" />
     </ul>
   </div>);
 }
