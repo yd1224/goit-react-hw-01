@@ -1,12 +1,14 @@
 import css from './Profile.module.css';
 import { ImProfile } from "react-icons/im";
+import defaultApart from './default.webp';
 export const Profile = ({ name, tag, location, image, action: { followers, views, likes } }) => {
   
+  const profileImage = image || defaultApart;
 
   return (<div className={css.profile}>
     <div className={css.description}>
       <img
-        src={image}
+        src={profileImage}
         alt="User avatar"
         className={css.avatar}
         width="50"
